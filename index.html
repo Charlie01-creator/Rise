@@ -1,84 +1,184 @@
-﻿<!DOCTYPE html>
- <html lang="en">
- <head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, 
-initial-scale=1.0"> 
-<title>Support African Children</title> 
-<link rel="stylesheet" href="styl.css"> 
-<style> 
-body {
- font-family: Arial, sans-serif;
- background-color: #f9f9f9; color: #333;
- margin: 0; padding: 0; }
-header {
- background: url('FB_IMG_17299321564801840.jpg')
- no-repeat center center/cover; height: 50vh;
- color: white; text-align: center; padding: 50px;
- } h1 { font-size: 3em;
- } h2 { font-size: 1.5em; 
-} nav { display: flex; 
-justify-content: center
-; /* Center the items */ background-color:
- #333; padding: 10px 0; } nav a
- { color: white; margin: 0 15px; 
-text-decoration: none; 
-transition: color 0.3s; 
-/* Smooth hover effect */ }
- nav a:hover { color: #ff6600;
- /* Highlight on hover */ } .vertical-nav {
-display: flex; flex-direction:
- column; align-items: flex-start; 
-background-color: rgba(51, 51, 51, 0.8); 
-/* Semi-transparent */ padding: 10px; border-radius:
- 5px; margin-top: 20px;
- /* Space above the vertical nav */
-} .vertical-nav a { color: rgba(255, 255, 255, 0.7);
- /* Less visible */ margin: 5px 0; 
-/* Vertical spacing */ text-decoration:
- none; transition: color 0.3s; 
-/* Smooth hover effect */ } .vertical-nav a:hover 
-{ color: white; /* Highlight on hover */ } section
- { padding: 20px; max-width: 800px;
- margin: auto; background: white;
- box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-margin-bottom: 20px; } .donate-button
- { display: inline-block;
- padding: 15px 30px; background-color:
- #ff6600; color: white; text-decoration: 
-none; border-radius: 5px; font-size: 1.2em; } 
-footer { text-align: center; padding: 20px;
- background-color: #333; color: white; } 
-</style> 
-</head> <body>
-<header> <h1>Support African Children</h1> <h2>Together, we can make a difference</h2> </header>
-<nav> <a href="home.html">Home</a> 
-<a href="donate.html">Donate</a>
- <a href="about.html">About Us</a>
- <a href="contact.html">Contact Us</a> </nav>
-<section> <h2>Our Mission</h2>
-<p>At  RISE, we strive to provide every child
- with access to education, healthcare, and a safe
- environment. Your support can help change lives.</p>
- <p><a href="donate.html" class="donate-button">Donate Now</a></p> </section>
-<section> <h2>Our Impact</h2>
- <p>With your help, we have:</p> 
-<ul> 
-<li>Provided education for over 1,000 children.</li>
- <li>Funded medical care for countless families.</li>
- <li>Delivered nutritious meals to those in need.</li> </ul> </section>
-<section> <h2>Get Involved</h2>
- <p>Join our community of supporters! Whether through donations,
- volunteering, or spreading the word, every effort counts
-We also give you an opportunity to sponsor a particular child/children <a href="sponsor.html">here</a>
-.</p> </section>
-<section> <h2>Upcoming Events</h2> <p>Stay tuned for our
- upcoming fundraising events and community gatherings. Together, 
-we can raise awareness and support for African children.</p> </section>
-<div class="vertical-nav"> <a href="home.html">Home</a>
- <a href="donate.html">Donate</a>
-<a href="about.html">About Us</a>
- <a href="contact.html">Contact Us</a> </div>
-<footer> <p>Psalms 109:9</p>
- | Follow us on social media</p> <p>© 2022 RISE. All rights reserved.</p> </footer>
-</body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Save Stray Animals - RISE AFRICA</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    .hero {
+      background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      background-color: #e74c3c;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #c0392b;
+    }
+
+    /* About Section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .about img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* Donation Usage Section */
+    .donation-usage {
+      padding: 50px 20px;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    .progress-bar {
+      width: 80%;
+      max-width: 500px;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 10px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .progress {
+      width: 50%; /* Update this based on your progress */
+      height: 100%;
+      background-color: #2ecc71;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .testimonials blockquote {
+      font-style: italic;
+      color: #555;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #3498db;
+    }
+
+    footer .social-icons {
+      margin-top: 10px;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Help Us Save Stray Animals with RISE AFRICA</h1>
+    <p>Your donation can provide food, shelter, and medical care to animals in need.</p>
+    <a href="https://your-gogetfunding-link.com" class="cta-button">Donate Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About RISE AFRICA</h2>
+    <p>At RISE AFRICA, we are committed to making a difference in the lives of stray animals. Every day, hundreds of animals in [Your Region] struggle to survive. They face hunger, disease, and harsh weather conditions. With your support, we can provide them with food, medical care, and a safe place to stay. Together, we can make a difference.</p>
+    <img src="https://via.placeholder.com/800x400" alt="RISE AFRICA Stray Animal Rescue">
+  </section>
+
+  <!-- Donation Usage Section -->
+  <section class="donation-usage">
+    <h2>How Your Donations Will Be Used</h2>
+    <p>Your donations will be used for:</p>
+    <ul>
+      <li>50%: Food and water for stray animals</li>
+      <li>30%: Medical care and vaccinations</li>
+      <li>20%: Building shelters and safe spaces</li>
+    </ul>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <p>$5,000 raised of $10,000 goal</p>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What People Are Saying</h2>
+    <blockquote>
+      "Thanks to RISE AFRICA, hundreds of animals have been given a second chance at life. Your work is truly inspiring!"
+      <br>– [Donor Name]
+    </blockquote>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 RISE AFRICA. All rights reserved.</p>
+    <p>Contact us at <a href="mailto:info@riseafrica.org">info@riseafrica.org</a></p>
+    <div class="social-icons">
+      <a href="https://facebook.com/riseafrica" target="_blank">&#xf082;</a> <!-- Facebook Icon -->
+      <a href="https://twitter.com/riseafrica" target="_blank">&#xf081;</a> <!-- Twitter Icon -->
+      <a href="https://instagram.com/riseafrica" target="_blank">&#xf16d;</a> <!-- Instagram Icon -->
+    </div>
+  </footer>
+</body>
+</html>
